@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ @font-face{font-family:'sdwb'; src:url('/app/assets/fonts/SDW_Font-Bold.ttf')}
+ @font-face{font-family:'sdwr'; src:url('/app/assets/fonts/SDW_Font-Regular.ttf')}
+ 
+ body, div, p {
+   text-align: center;
+   word-break: keep-all;
+  }
+
+:root {
+  --div_size: 50%;
+  --div_padding: 0px;
+}
+
+:lang(en-us){
+  font-family:'sdwr';
+}
+:lang(ko){
+  font-family:'Noto Sans KR';
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+
+}
+
+td {
+  word-break: break-all;
+}
+
+
+h1 {
+  font-family:'sdwb';
+}
+
+.menu_button {
+
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.menu_button:hover {
+ text-decoration:underline; 
+}
+
+
+.black_cell {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.white_cell {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.light_black_cell {
+  background-color: rgb(55, 55, 55);
+  color: white;
+}
+
+.dark_white_cell {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+
+.map_cell {
+ 
+
+}
+
+.map_cell div {
+
+}
+
+#overlap {
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(125, 125, 125);
+  
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+/* scroll events */
+
+  .fill_color{
+    background-color: black;
+  }
+
+  td{
+    width: 300px;
+    height: 300px;
+    transition: background-color 0.5s ease-in
+  }
+
+  td:hover{
+    cursor: pointer;
+    background-color: rgb(240,240,240);
+  }
+
+  td.fill_color:hover{
+    cursor: pointer;
+    background-color: rgb(50,50,50);
+  }
+
+
+  .animation_on{
+    background-color: rgb(250,50,50);
+  }
+
+  #start, #end{
+    z-index: 99; /* Make sure it does not overlap */
+  background-color: blue; /* Set a background color */
+  }

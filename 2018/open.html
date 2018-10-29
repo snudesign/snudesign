@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Hello...</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+
+/////size reset ///////////////////
+
+let reset_all_size = function(){
+
+  let td_height = parseInt($( window ).width() * 0.2) // 윈도우 값의 0.2만큼을 한 셀의 크기로 설정
+  let table_width = td_height*4;  // 테이블은 4개의 셀 크기
+
+  $("table").css("width",  table_width)
+
+  $(".top_cell").css("width",  td_height)
+                .css("height",  td_height)
+
+  $("#googleMap").css("width",  td_height*2)
+                .css("height",  td_height*2)
+
+  $("td").css("width",  td_height)
+        .css("height",  td_height)
+}
+
+
+/////제이쿼리 실행 ///////////////////
+
+  $(document).ready(function(){
+
+    reset_all_size();
+
+    $( window ).resize(function() {
+      reset_all_size();
+    }) 
+
+  });
+
+
+/////menu button ///////////////////
+
+  var menu1 = function (){
+    window.scrollTo(0, $("#happy").position().top); // x, y
+  }
+
+  var menu5 = function (){
+    window.scrollTo(0, $("#SAD").position().top); // x, y
+  }
+
+
+
+/////scroll top button ///////////////////
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+	
+	
+  <h1> SNu dEsIGN WEeK 2018 </h1>
+
+  <button class="menu_button" onclick="menu1()"> EXHIBITION </button>
+  <button class="menu_button" onclick="menu2()"> PROGRAM </button>
+  <button class="menu_button" onclick="menu3()"> CONTACT </button>
+  <button class="menu_button" onclick="menu4()"> VISUAL DESIGN </button>
+  <button class="menu_button" onclick="menu5()"> INDUSTRIAL DESIGN </button>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+  <table>
+
+  <tr>
+<td class="top_cell black_cell" colspan="3" rowspan="3">
+  <div lang="ko" style=" text-align:left; width:'100%'; padding:20px 60px 20px 20px; line-height: 16pt; font-size: 10pt">
+      서울대학교 디자인학부 디자인전공 전시는 매해 겨울 진행된다.<br>
+      시각디자인 또는 공업디자인을 전공으로 1년동안 준비한 학생들은 학교를 떠나기 전 처음이자 마지막으로 본격적인 연합 전시를 함께 준비하고 운영하게 된다. 2018년 디자인학부 졸업 전시의 제목은 SDGS로, “서울대학교 디자인학부 졸업 전시”의 줄임말이다.
+    <p  style="text-align:left;">디자인전공의 웹사이트는 차분한 흑백으로, 절제된 구성이 눈에 띈다. 졸업 전시의 디자인은 이러한 질서의 변형에서 구상이 출발하였다. 그리고 구축된 규칙과 아이덴티티에서 벗어나, 전시에 참여하는 모든 이의 다양함과 유연함을 포용하는 무질서를 중심으로 하는 시각 언어가 구성되었다.</p>
+    전시 제목은 서울대학교 디자인전공 졸업 전시의 줄임말로, 각 글자는 행사와 참여 학생과 관련하여 의미를 가지는 숫자들을 대변한다. 디자인학부 디자인전공은 70년간 디자이너를 배출해 왔으며2 현재 관악구 캠퍼스의 디자인 연구동 49 동에 위치한다. 2018년 학부 졸업 전시에서는 47명의 학생이 작품을 선보일 예정이다.
+  </div>
+</td>
+<td class="top_cell black_cell"> COLLECT</td>
+</tr>
+
+
+<tr>
+<td class="top_cell dark_white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+
+<tr>
+<td class="top_cell dark_white_cell"> COLLECT</td>
+<td class="top_cell white_cell" colspan="3" rowspan="3"> CONNECT</td>
+
+</tr>
+
+
+<tr>
+<td class="top_cell black_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell dark_white_cell"> CONNECT</td>
+</tr>
+
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+
+    <tr>
+    <td class="top_cell black_cell"> CONNECT</td>
+    <td class="top_cell white_cell"> COLLECT</td>
+    <td class="top_cell black_cell"> CONNECT</td>
+    <td class="top_cell white_cell"> COLLECT</td>
+    </tr>
+
+
+  <tr>
+    <td>Peter</td>
+    <td class="black_cell"> COLLECT</td>
+    <td class="black_cell map_cell" colspan="2" rowspan="2">  <div id="googleMap">
+    </div>
+
+
+    
+    
+    </td>
+  </tr>
+  <tr>
+    <td class="black_cell"> CONNECT </td>
+    <td> COLLECT</td>
+  </tr>
+  <tr>
+    <td> CONNECT</td>
+    <td class="black_cell"> COLLECT</td>
+    <td> COLLECT</td>
+    <td class="black_cell"> COLLECT</td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2" class="black_cell"> 1 </td>
+    <td class="black_cell"> COLLECT</td>
+    <td> COLLECT</td>
+  </tr>
+  <tr>
+  <td> CONNECT</td>
+  <td  class="black_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell flicker"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td id="happy" class="top_cell white_cell"> HAPPY </td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td id="SAD" class="top_cell white_cell"> SAD </td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+<tr>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+<td class="top_cell white_cell"> COLLECT</td>
+<td class="top_cell black_cell"> CONNECT</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+<script> 
+var myButton = document.getElementById("clickButton");
+var myText = document.getElementById("helloText");
+
+
+function doSomething() {
+	myText.textContent = "hello, world!";
+}
+
+
+
+
+
+
+function myMap() {
+
+  //// 지도 그리기
+  var mapProp= {
+      center:new google.maps.LatLng(37.463651, 126.954269), //지도 중앙값 
+      zoom:15,
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  //// 마커 표시하기
+  var marker = new google.maps.Marker({
+    position: {lat: 37.463651, lng: 126.954269},
+    animation:google.maps.Animation.BOUNCE
+  });
+
+  marker.setMap(map);
+
+  //// 선그리기
+  var pos1 = {lat: 37.463965, lng: 126.955160};
+  var pos2 = {lat: 37.463651, lng: 126.954269};
+  var pos3 = {lat: 37.463841, lng: 126.954022};
+
+  var myTrip = [pos1, pos2, pos3];
+  var flightPath = new google.maps.Polyline({
+    path:myTrip,
+    strokeColor:"#0000FF",
+    strokeOpacity:0.8,
+    strokeWeight:2
+  });
+
+  flightPath.setMap(map);
+}
+
+
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVjiMn2rNsuzl7mdZjdvQMbxexqN2pKX8&callback=myMap"></script>
+
+
+<!-- 스크롤/선택으로 클래스 바꾸기 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+  $("td").click(function(){
+    $(this).toggleClass("fill_color");
+  }) 
+
+  // window.scrollY는 스크롤은 화면의 맨위 지점을 찍음..
+  var middle_pos1 = $(".flicker").position().top + $(".flicker").height()/2; // div의 중간값 찾기
+
+  var range = 500;
+  var size_h_window = window.innerHeight;
+
+  console.log( "flicker", middle_pos1 );
+
+  $("body").append( "<div id='start'> start </div>" );
+  $("body").append( "<div id='end'> end </div>" );
+  
+  $("#start")
+  .css('position',"absolute")
+  .css('top',middle_pos1- size_h_window/2);
+
+  $("#end")
+  .css('position',"absolute")
+  .css('top',middle_pos1);
+
+  $(window).scroll(function() {
+    console.log( window.scrollY );
+  
+    
+    if( !$(".flicker").hasClass("animation_on") ) { // 없음
+
+      if(window.scrollY > middle_pos1 - size_h_window/2 && window.scrollY < middle_pos1){
+        $(".flicker").addClass("animation_on");
+        console.warn("on");
+      }
+      else{
+        $(".flicker").removeClass("animation_on");
+        console.log("off");
+      }
+    }else{  // 있음. 아무일도 하지 않는다.
+
+      console.log("none");
+
+      if(window.scrollY <=  middle_pos1 - size_h_window/2 || window.scrollY >= middle_pos1){
+        $(".flicker").removeClass("animation_on");
+        }
+
+    }
+
+
+    /*
+    var $el = $('.show-on-scroll');
+    
+    console.log()
+    if($(this).scrollTop() >= 400) $el.addClass('shown');
+    else $el.removeClass('shown');
+      */
+});
+
+});
+
+
+
+
+</script>
+
+</body>
+</html>

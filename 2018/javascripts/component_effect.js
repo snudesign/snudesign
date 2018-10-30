@@ -126,13 +126,13 @@ var x = setInterval(function() {
     var remain = distance % 10000;
 
     // Output the result in an element with id="demo"
-    document.getElementById("timer").innerHTML = days + " : " + hours + " : "
-    + minutes + " : " + seconds + " : " + remain;
+   // document.getElementById("timer").innerHTML = days + " : " + hours + " : "
+   // + minutes + " : " + seconds + " : " + remain;
     
-    document.getElementById("d-day").innerHTML = "D-" + days
-    document.getElementById("d-day-h").innerHTML = "<p class='content_section'>hours</p>" + "<p class='content_A'>"+hours+"</p>" 
-    document.getElementById("d-day-m").innerHTML = "<p class='content_section'>minutes</p>" + "<p class='content_A'>"+minutes+"</p>" 
-    document.getElementById("d-day-s").innerHTML = "<p class='content_section'>seconds</p>" + "<p class='content_A'>"+seconds+"</p>" 
+    document.getElementById("d-day").innerHTML = "D-" + days;
+    document.getElementById("d-day-h").innerHTML = "<p class='content_section'>hours</p>" + "<p class='content_A'>"+hours+"</p>"; 
+    document.getElementById("d-day-m").innerHTML = "<p class='content_section'>minutes</p>" + "<p class='content_A'>"+minutes+"</p>";
+    document.getElementById("d-day-s").innerHTML = "<p class='content_section'>seconds</p>" + "<p class='content_A'>"+seconds+"</p>";
     
     // If the count down is over, write some text 
     if (distance < 0) {

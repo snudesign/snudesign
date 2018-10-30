@@ -33,8 +33,7 @@
 }
 
 :lang(en-us){
-  /* font-family: Arial, Helvetica, sans-serif;
-  */
+
 }
 :lang(ko){
   font-family:'Noto Sans KR';
@@ -68,28 +67,42 @@ p.content_A {
   font-size: 1em;
 }
 
-.content_div
-{
+p.content_div {
   width:'100%'; 
   padding:20px 60px 20px 20px; 
 }
 
-.content_title
-{
+p.content_title {
   text-align:left; 
   width:'100%'; 
   padding:20px 60px 20px 20px; 
   line-height: 2.6rem; 
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
-.content_paragraph
-{
+p.content_subtitle {
   text-align:left; 
   width:'100%'; 
   padding:20px 60px 20px 20px; 
-  line-height: 1.6rem; 
-  font-size: 1rem;
+  line-height: 2rem; 
+  font-size: 1.6rem;
+}
+
+
+p.content_paragraph {
+  text-align:left; 
+  width:'100%'; 
+  padding:20px 60px 20px 20px; 
+  line-height: 2.3rem; 
+  font-size: 1.5rem;
+}
+
+p.content_list {
+  text-align:left; 
+  width:'100%'; 
+  padding:20px 60px 20px 20px; 
+  line-height: 3rem; 
+  font-size: 1.4rem;
 }
 
 .icon_big{
@@ -182,24 +195,5 @@ td {
     transition: background-color 0.5s ease-in
   }
 
-  td:hover{
-    cursor: pointer;
-   /* background-color: rgb(240,240,240); *?
-  }
-
-  td.fill_color:hover{
-    cursor: pointer;
-    background-color: rgb(50,50,50);
-  }
-
-
-  .animation_on{
-    background-color: rgb(250,50,50);
-  }
-
-  #start, #end{
-    z-index: 99; /* Make sure it does not overlap 
-  background-color: blue; Set a background color */
-  }
 
 

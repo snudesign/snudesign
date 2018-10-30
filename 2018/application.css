@@ -65,6 +65,7 @@ table {
 
 td {
   word-break: break-all;
+  overflow:hidden;
 }
 
 

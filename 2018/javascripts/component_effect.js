@@ -138,4 +138,4 @@ var countDown = setInterval(function() {
     if (distance < 0) {
        // document.getElementById("timer").innerHTML = "OPEN!!";
     }
-}, 50); //여기서 리셋 시간 결정하는 것임
+}, 100); //여기서 리셋 시간 결정하는 것임

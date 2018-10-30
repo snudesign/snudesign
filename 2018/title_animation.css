@@ -1,7 +1,12 @@
+#top_title {
+  overflow:hidden;
+  background-color: black;
+}
 
 #title_animation {
   font-family:'sdwb';
-  
+  color: white;
+
   position: relative;
   text-align: left;
   white-space: nowrap;

@@ -110,8 +110,8 @@ var Show_keywords = function(el){
 var countDownDate = new Date("Dec 6, 2018 10:00:00").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
-
+var countDown = setInterval(function() {
+    console.log("e");
     // Get todays date and time
     var now = new Date().getTime();
     

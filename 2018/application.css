@@ -36,8 +36,7 @@
 }
 
 h1 {
-  font-family:'sdwb';
-  /* font-family:'sdwr'; */
+  font-family:'sdwb', 'sdwr';
 }
 
 

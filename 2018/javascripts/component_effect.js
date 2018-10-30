@@ -96,3 +96,46 @@ var Show_keywords = function(el){
  
  console.clear();
  var keywords = new Show_keywords($('#show_keywords'));
+
+
+
+
+
+
+
+
+ /////////////////// 카운트 다운 & 타이머 설정 ///////////////
+
+ // Set the date we're counting down to
+var countDownDate = new Date("Dec 6, 2018 10:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var remain = distance % 10000;
+
+    // Output the result in an element with id="demo"
+    document.getElementById("timer").innerHTML = days + " : " + hours + " : "
+    + minutes + " : " + seconds + " : " + remain;
+    
+    document.getElementById("d-day").innerHTML = "D-" + days
+    document.getElementById("d-day-h").innerHTML = "<p class='content_section'>hours</p>" + "<p class='content_A'>"+hours+"</p>" 
+    document.getElementById("d-day-m").innerHTML = "<p class='content_section'>minutes</p>" + "<p class='content_A'>"+minutes+"</p>" 
+    document.getElementById("d-day-s").innerHTML = "<p class='content_section'>seconds</p>" + "<p class='content_A'>"+seconds+"</p>" 
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+       // document.getElementById("timer").innerHTML = "OPEN!!";
+    }
+}, 50); //여기서 리셋 시간 결정하는 것임

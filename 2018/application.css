@@ -29,29 +29,36 @@
 }
 
 :lang(en-us){
-  font-family:'sdwr';
+  font-family: Arial, Helvetica, sans-serif;
 }
 :lang(ko){
   font-family:'Noto Sans KR';
 }
+
+h1 {
+  font-family:'sdwb';
+  /* font-family:'sdwr'; */
+}
+
+
+p.content_section {
+  font-size: 0.5em;
+}
+
+p.content_A {
+  font-size: 1em;
+}
+
 
 table {
   margin: auto;
   border-collapse: collapse;
 }
 
-table, th, td {
-
-}
-
 td {
   word-break: break-all;
 }
 
-
-h1 {
-  font-family:'sdwb';
-}
 
 .menu_button {
 
@@ -92,23 +99,6 @@ h1 {
 .dark_white_cell {
   background-color: rgb(240, 240, 240);
   color: black;
-}
-
-
-.map_cell {
- 
-
-}
-
-.map_cell div {
-
-}
-
-#overlap {
-  position: absolute;
-  z-index: 10;
-  background-color: rgb(125, 125, 125);
-  
 }
 
 
@@ -161,4 +151,3 @@ h1 {
   }
 
 
-  

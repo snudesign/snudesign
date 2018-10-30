@@ -1,0 +1,23 @@
+
+#title_animation {
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+
+    -webkit-animation: example 35s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+    animation: example 35s infinite;
+    animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {left:-1000px;}
+    to {left:-10px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {left:-1000px;}
+  to {left:-10px;}
+}

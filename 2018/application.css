@@ -15,8 +15,8 @@
  */
 
 
- @font-face{font-family:'sdwb'; src:url('/app/assets/fonts/SDW_Font-Bold.ttf')}
- @font-face{font-family:'sdwr'; src:url('/app/assets/fonts/SDW_Font-Regular.ttf')}
+ @font-face{font-family:'sdwb'; src:url('fonts/SDW_Font-Bold.ttf')}
+ @font-face{font-family:'sdwr'; src:url('fonts/SDW_Font-Regular.ttf')}
  
  body, div, p {
    text-align: center;

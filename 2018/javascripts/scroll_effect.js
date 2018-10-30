@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-  $("td").click(function(){
-    $(this).toggleClass("fill_color");
-  }) 
+  // $(".interactive_cell").click(function(){
+  //   $(this).toggleClass("fill_color");
+  // }) 
 
   // window.scrollY는 스크롤은 화면의 맨위 지점을 찍음..
   var middle_pos1 = $(".flicker").position().top + $(".flicker").height()/2; // div의 중간값 찾기

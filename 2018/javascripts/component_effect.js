@@ -6,7 +6,7 @@ var Show_keywords = function(el){
   var m = this;
   
   m.init = function(){
-    m.codeletters = "■□⚑❖☐▪︎▫︎◻︎◼︎◆◇⍁♦︎";//&#*+%?£@§$
+    m.codeletters = "■□⚑*☐▪︎▫︎◻︎◼︎◆◇⍁♦︎";//&#*+%?£@§$
     m.message = 0;
     m.current_length = 0;
     m.fadeBuffer = false;
@@ -123,13 +123,13 @@ var countDown = setInterval(function() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    var remain = distance % 10000;
+    var remain = distance;
 
     // Output the result in an element with id="demo"
    // document.getElementById("timer").innerHTML = days + " : " + hours + " : "
    // + minutes + " : " + seconds + " : " + remain;
     
-    document.getElementById("d-day").innerHTML = "D-" + days;
+    document.getElementById("d-day").innerHTML = "D-" + days +"<p class='content_A' style='color:hsl(0, 0%, 15%);font-size:2rem'>"+remain+"</p>";
     document.getElementById("d-day-h").innerHTML = "<p class='content_section'>hours</p>" + "<p class='content_A'>"+hours+"</p>"; 
     document.getElementById("d-day-m").innerHTML = "<p class='content_section'>minutes</p>" + "<p class='content_A'>"+minutes+"</p>";
     document.getElementById("d-day-s").innerHTML = "<p class='content_section'>seconds</p>" + "<p class='content_A'>"+seconds+"</p>";
@@ -138,4 +138,4 @@ var countDown = setInterval(function() {
     if (distance < 0) {
        // document.getElementById("timer").innerHTML = "OPEN!!";
     }
-}, 100); //여기서 리셋 시간 결정하는 것임
+}, 77); //여기서 리셋 시간 결정하는 것임

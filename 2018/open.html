@@ -26,12 +26,15 @@
   <h1> SNu dEsIGN WEeK 2018 </h1>
 
   <!-- 메뉴 -->
-  <button class="menu_button" onclick="menu1()"> exhibition </button>
-  <button class="menu_button" onclick="menu2()"> program </button>
-  <button class="menu_button" onclick="menu3()"> contact </button>
-  <button class="menu_button" onclick="menu4()"> visual design </button>
-  <button class="menu_button" onclick="menu5()"> industrial design </button>
-
+  <div class="menu_div">
+    <ul class="menu">
+      <li><button class="menu_button" onclick="menu1()"> exhibition </button> </li>
+      <li><button class="menu_button" onclick="menu2()"> program </button> </li>
+      <li><button class="menu_button" onclick="menu3()"> contact </button> </li>
+      <li><button class="menu_button" onclick="menu4()"> visual design </button> </li>
+      <li><button class="menu_button" onclick="menu5()"> industrial design </button> </li>
+    </ul>  
+  </div>
   <!-- TOP버튼 -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
@@ -44,91 +47,227 @@
     <!-- 카운트 다운 -->
     <tr>
       <td class="black_cell" colspan="3" rowspan="3">   <p id="d-day"></p>  </td>
-      <td class="black_cell"> <p id="d-day-h"></p>  </td>
+      <td class="black_cell" style="background-color:hsl(0, 0%, 5%)"> <p id="d-day-h"></p>  </td>
     </tr>
 
     <tr>
-    <td class="white_cell"> <p id="d-day-m"></p>  </td>
+    <td class="black_cell" style="background-color:hsl(0, 0%, 10%)"> <p id="d-day-m"></p>  </td>
     </tr>
       
     <tr>
-    <td class="black_cell"> <p id="d-day-s"></p>  </td>
+    <td class="black_cell" style="background-color:hsl(0, 0%, 15%)"> <p id="d-day-s"></p>  </td>
     </tr>
-
-    <!-- 전시 키워드 -->
-    <tr>
-        <td class="white_cell"> ⚑ </td>
-        <td class="white_cell"> ⚑ </td>
-        <td class="white_cell"> ⚑ </td>
-        <td class="white_cell"> ⚑ </td>
-      </tr>
-      
-    <tr>
-      <td class="black_cell" colspan="4">  <div id="show_keywords"></div> </td>
-    </tr>
-          
-    <tr>
-      <td class="white_cell"> ⚑ </td>
-      <td class="white_cell"> ⚑ </td>
-      <td class="white_cell"> ⚑ </td>
-      <td class="white_cell"> ⚑ </td>
-    </tr>
-
-    
-<!-- 전시 소개 -->
-
-  <tr>
-<td class="black_cell" colspan="3" rowspan="3">
-  <div lang="ko" class="content_paragraph"> 
-    <p style="text-align:left;""> 
-      🏁 <br>
-      2018 SNU DESIGN WEEK <br>
-      서울대 디자인전공 졸업주간 <br>
-      ───────────────────────────<br>
-      2018. 12. 6 THU - 14 FRI, 10:00 - 18:00 <br>
-      서울대학교 49동 디자인연구동 & 220동 우석홀 <br>  
-    </p> 
- </div>
-</td>
-<td class="black_cell"> CONNECT   </td>
-</tr>
-
-<tr>
-<td class="dark_white_cell"> COLLECT</td>
-</tr>
-
-<tr>
-<td class="black_cell"> CONNECT</td>
-</tr>
 
     <!-- 전시 정보 (일시/장소 등) -->
-    <!-- 후원사 -->
-    <!-- 전시 슬로건 -->
-    <!-- DOT 개념 -->
-    <!-- 로고 장자인 -->
-    <!-- 시각디자인 -->
-    <!-- 공업디자인 -->
+  <tr>
+    <td class="white_cell">    </td>
+    <td class="white_cell" colspan="3" rowspan="3">
+      <div lang="ko" class="content_div"> 
+        <p class="content_paragraph"> 
+          🏁 <br>
+          2018 SNU DESIGN WEEK <br>
+          서울대 디자인전공 졸업주간 <br>
+          ───────────────────────────<br>
+          2018. 12. 6 THU - 14 FRI, 10:00 - 18:00 <br>
+          서울대학교 49동 디자인연구동 & 220동 우석홀 <br>  
+        </p> 
+    </div>
+    </td>
+</tr>
 
-    <!-- 연락처 -->
+<tr>
+<td class="white_cell" style="background-color:hsl(0, 0%, 95%)"> </td>
+</tr>
+
+<tr>
+<td class="white_cell" style="background-color:hsl(0, 0%, 90%)">  </td>
+</tr>
+
+  <!-- 전시 키워드 -->
+  <tr>
+      <td class="black_cell"> <p class="icon_big"> 🏁 🏴 </p> </td>
+      <td class="black_cell"> <p class="icon_big"> 🏁 🏳 </p> </td>
+      <td class="black_cell"> <p class="icon_big"> 🏁 🏴 </p> </td>
+      <td class="black_cell"> <p class="icon_big"> 🏁 🏳 </p> </td>
+    </tr>
+    
+    
+    
+  <tr>
+    <td class="black_cell" colspan="4">  <div id="show_keywords"></div> </td>
+  </tr>
+        
+  <tr>
+    <td class="black_cell"> <p class="icon_big"> 🏁 🏳 </p> </td>
+    <td class="black_cell"> <p class="icon_big"> 🏁 🏴 </p> </td>
+    <td class="black_cell"> <p class="icon_big"> 🏁 🏳 </p> </td>
+    <td class="black_cell"> <p class="icon_big"> 🏁 🏴 </p> </td>
+  </tr>
+
+<!-- 전시 소개 -->
 
     <tr>
-        <td colspan="4" class="dark_white_cell"> COLLECT</td>
+        <td colspan="4" class="white_cell">  </td>
     </tr>
 
 <tr>
-<td class="dark_white_cell"> COLLECT</td>
-<td class="white_cell" colspan="3" rowspan="3"> CONNECT</td>
-
+  <td class="white_cell">  </td>
+  <td class="white_cell" colspan="3" rowspan="3"> 
+      <div lang="ko" class="content_div"> 
+          <p class="content_title"> 
+          전시 소개
+          </p>
+          <p class="content_paragraph"> 
+          서울대학교 디자인전공은 2018년 12월 6일부터 12월 14일까지 졸업생들이 주관하는 [2018 SNU DESIGN WEEK : 졸업주간]을 진행합니다. 졸업주간에는 48명의 졸업생이 브랜드, 시각, 미디어, 모션그래픽, 공간, 제품시스템, 운송기기 등 7개의 프로젝트를 통해 총 95개의 졸업작품을 전시하며, 토크 콘서트・상영회・세미나 등의 전시연계 프로그램을 함께 열어 누구나 참여하고 함께 즐길 수 있는 졸업 행사로 만들었습니다. 졸업생에게 있어서 처음이자 마지막인 학부 졸업전시를 학위청구만을 위해 전시하는 것이 아니라 관람객과 현업에 계신 선배님들, 학내 구성원들과 함께하는 소통의 자리이자 학과 전체의 행사로 거듭나고자 합니다.
+        </p>
+      </div>
+  </td>
 </tr>
-
 
 <tr>
-<td class="black_cell"> COLLECT</td>
-</tr>
+    <td class="white_cell">  </td>
+    </tr>
+    
+    <tr>
+    <td class="white_cell">  </td>
+    </tr>
+
+    <!-- 후원사 -->
+
+    <tr>
+        <td colspan="4" class="white_cell">
+            <div lang="ko" class="content_div"> 
+            <p class="content_title"> 
+                ──────<br>
+                후원사 
+            </p>
+            
+            </div>
+           
+        </td>
+    </tr>
 
 <tr>
-<td class="dark_white_cell"> CONNECT</td>
+  <td class="white_cell"> 서울대학교 디자인 총동문회 </td>
+  <td class="black_cell"> 두성종이 </td>
+  <td class="white_cell"> - </td>
+  <td class="black_cell"> - </td>
 </tr>
+
+        <!-- 전공-->
+        <tr>
+            <td colspan="4" class="white_cell">
+                <div lang="ko" class="content_div"> 
+                    
+                <p class="content_title"> 
+                    ──────<br>
+                    MAYOR
+                </p>
+                </div>
+            </td>
+        </tr>
+    <!-- 시각디자인 -->     <!-- 공업디자인 -->
+    <tr>
+        <td colspan="2" class="white_cell">
+            <div class="content_div"> 
+            <p class="content_title"> 
+                VISUAL DESIGN
+            </p>
+            </div>
+        </td>
+        <td colspan="2" class="black_cell">
+            <div class="content_div"> 
+            <p class="content_title"> 
+                INDUSTRIAL DESIGN
+            </p>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="white_cell" style="background-color:hsl(0, 0%, 95%)"> BRAND </td>
+        <td class="white_cell" style="background-color:hsl(0, 0%, 100%)"> VISUAL COMMUNICATION </td>
+        <td class="black_cell" style="background-color:hsl(0, 0%, 5%)"> SPACE </td>
+        <td class="black_cell" style="background-color:hsl(0, 0%, 0%)"> PRODUCT SYSTEM </td>
+    </tr>
+    <tr>
+        <td class="white_cell" style="background-color:hsl(0, 0%, 100%)"> MEDIA </td>
+        <td class="white_cell" style="background-color:hsl(0, 0%, 95%)"> MOTION GRAPHIC </td>
+        <td class="black_cell" style="background-color:hsl(0, 0%, 0%)"> TRANSPORTATION </td>
+        <td class="black_cell" style="background-color:hsl(0, 0%, 5%)"> - </td>
+    </tr>
+
+        <!-- 프로그램 -->
+        <tr>
+            <td colspan="4" class="black_cell">
+                <div lang="ko" class="content_div"> 
+                <p class="content_title"> 
+                    PROGRAM
+                </p>
+                </div>
+            </td>
+        </tr>
+
+    <!-- 전시 슬로건 -->
+    <tr>
+        <td colspan="4" class="dark_white_cell">
+            <div lang="ko" class="content_div"> 
+            <p class="content_title"> 
+                SLOGAN
+            </p>
+            </div>
+        </td>
+    </tr>
+    <!-- DOT 개념 -->
+    <tr>
+        <td colspan="4" class="dark_white_cell">
+            <div lang="ko" class="content_div"> 
+            <p class="content_title"> 
+                DOT
+            </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="white_cell interactive_cell"> COLLECT</td>
+        <td class="black_cell interactive_cell"> CONNECT</td>
+        <td class="white_cell interactive_cell"> COLLECT</td>
+        <td class="black_cell interactive_cell"> CONNECT</td>
+    </tr>
+    <!-- 로고 장자인 -->
+    <tr>
+        <td colspan="4" class="dark_white_cell">
+            <div lang="ko" class="content_div"> 
+            <p class="content_title"> 
+                LOGO
+            </p>
+            </div>
+        </td>
+    </tr>
+
+
+    
+
+
+
+
+
+
+
+   
+
+    <!-- 연락처 -->
+    <tr>
+        <td colspan="4" class="dark_white_cell">
+            <p class="content_title"> 
+                후원사
+            </p>
+        </td>
+    </tr>
+
+
+
+
 
 
 

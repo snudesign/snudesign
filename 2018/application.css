@@ -18,7 +18,11 @@
  @font-face{font-family:'sdwb'; src:url('fonts/SDW_Font-Bold.ttf')}
  @font-face{font-family:'sdwr'; src:url('fonts/SDW_Font-Regular.ttf')}
  
- body, div, p {
+ body {
+  margin: 0
+ }
+
+ body, div{
    text-align: center;
    word-break: keep-all;
   }
@@ -38,7 +42,22 @@
 
 h1 {
   font-family:'sdwb', 'sdwr';
+  margin: 3rem 0 2rem 0;
 }
+
+
+.menu>li{
+  display: inline-block;
+}
+
+.menu>li:after{
+  content: "\002F";
+  font-weight: 300;
+  margin: 0 10px 0 12px;
+  margin: 0 0.625rem 0 0.75rem;
+}
+
+
 
 
 p.content_section {
@@ -49,14 +68,38 @@ p.content_A {
   font-size: 1em;
 }
 
+.content_div
+{
+  width:'100%'; 
+  padding:20px 60px 20px 20px; 
+}
+
+.content_title
+{
+  text-align:left; 
+  width:'100%'; 
+  padding:20px 60px 20px 20px; 
+  line-height: 2.6rem; 
+  font-size: 2rem;
+}
+
 .content_paragraph
 {
   text-align:left; 
   width:'100%'; 
   padding:20px 60px 20px 20px; 
-  line-height: 16pt; 
-  font-size: 10pt"
+  line-height: 1.6rem; 
+  font-size: 1rem;
 }
+
+.icon_big{
+
+  font-size: 3rem;
+}
+
+
+
+/********************************/
 
 table {
   margin: auto;
@@ -141,7 +184,7 @@ td {
 
   td:hover{
     cursor: pointer;
-    background-color: rgb(240,240,240);
+   /* background-color: rgb(240,240,240); *?
   }
 
   td.fill_color:hover{
@@ -155,8 +198,8 @@ td {
   }
 
   #start, #end{
-    z-index: 99; /* Make sure it does not overlap */
-  background-color: blue; /* Set a background color */
+    z-index: 99; /* Make sure it does not overlap 
+  background-color: blue; Set a background color */
   }
 
 

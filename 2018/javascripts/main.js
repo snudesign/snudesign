@@ -32,7 +32,7 @@ let reset_all_size = function(){
   });
 
 
-/////menu button ///////////////////
+/////menu button 스크롤 이동 ///////////////////
 
   var menu1 = function (){
     window.scrollTo(0, $("#happy").position().top); // x, y

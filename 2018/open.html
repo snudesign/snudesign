@@ -7,6 +7,7 @@
 <title>Hello...</title>
 <link rel="stylesheet" type="text/css" href="application.css">
 <link rel="stylesheet" type="text/css" href="title_animation.css">
+<link rel="stylesheet" type="text/css" href="component_effect.css">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,42 +17,47 @@
 </head>
 
 <body>
-	
+  <!-- 타이틀 애니메이션 -->
   <p id="title_animation"> SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018   SNu dEsIGN WEeK 2018</p>
+
+  <!-- 메인 로고 -->
   <h1> SNu dEsIGN WEeK 2018 </h1>
 
+  <!-- 메뉴 -->
   <button class="menu_button" onclick="menu1()"> exhibition </button>
   <button class="menu_button" onclick="menu2()"> program </button>
   <button class="menu_button" onclick="menu3()"> contact </button>
   <button class="menu_button" onclick="menu4()"> visual design </button>
   <button class="menu_button" onclick="menu5()"> industrial design </button>
 
+  <!-- TOP버튼 -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-
+  <!-- 본문 영역 -->
   <table>
 
-    <tr>
-        <td class="top_cell black_cell"> COLLECT</td>
-      <td class="top_cell black_cell" colspan="2" rowspan="3">
-        <div lang="ko">
-        </div>
-      </td>
-      <td class="top_cell black_cell"> COLLECT</td>
-      </tr>
-      
-      
-      <tr>
-      <td class="top_cell dark_white_cell"> COLLECT</td>
-      </tr>
-      
-      <tr>
-      <td class="top_cell black_cell"> CONNECT</td>
-      </tr>
 
+    <!-- 카운트 다운 -->
+    <tr>
+      <td class="black_cell"> COLLECT</td>
+      <td class="black_cell" colspan="2" rowspan="3">
+          <div id="show_keywords"></div>
+      </td>
+      <td class="black_cell"> COLLECT</td>
+    </tr>
       
+
+    <tr>
+    <td class="dark_white_cell"> COLLECT</td>
+    </tr>
+      
+    <tr>
+    <td class="black_cell"> CONNECT</td>
+    </tr>
+
+    <!-- 전시 소개 -->
   <tr>
-<td class="top_cell black_cell" colspan="3" rowspan="3">
+<td class="black_cell" colspan="3" rowspan="3">
   <div lang="ko" style=" text-align:left; width:'100%'; padding:20px 60px 20px 20px; line-height: 16pt; font-size: 10pt">
       서울대학교 디자인학부 디자인전공 전시는 매해 겨울 진행된다.<br>
       시각디자인 또는 공업디자인을 전공으로 1년동안 준비한 학생들은 학교를 떠나기 전 처음이자 마지막으로 본격적인 연합 전시를 함께 준비하고 운영하게 된다. 2018년 디자인학부 졸업 전시의 제목은 SDGS로, “서울대학교 디자인학부 졸업 전시”의 줄임말이다.
@@ -59,62 +65,70 @@
     전시 제목은 서울대학교 디자인전공 졸업 전시의 줄임말로, 각 글자는 행사와 참여 학생과 관련하여 의미를 가지는 숫자들을 대변한다. 디자인학부 디자인전공은 70년간 디자이너를 배출해 왔으며2 현재 관악구 캠퍼스의 디자인 연구동 49 동에 위치한다. 2018년 학부 졸업 전시에서는 47명의 학생이 작품을 선보일 예정이다.
   </div>
 </td>
-<td class="top_cell black_cell"> COLLECT</td>
+<td class="black_cell"> COLLECT</td>
+</tr>
+    <!-- 전시 정보 (일시/장소 등) -->
+    <!-- 후원사 -->
+    <!-- 전시 슬로건 -->
+    <!-- DOT 개념 -->
+    <!-- 로고 장자인 -->
+    <!-- 시각디자인 -->
+    <!-- 공업디자인 -->
+
+    <!-- 연락처 -->
+<tr>
+<td class="dark_white_cell"> COLLECT</td>
+</tr>
+
+<tr>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 
 <tr>
-<td class="top_cell dark_white_cell"> COLLECT</td>
-</tr>
-
-<tr>
-<td class="top_cell black_cell"> CONNECT</td>
-</tr>
-
-
-<tr>
-<td class="top_cell dark_white_cell"> COLLECT</td>
-<td class="top_cell white_cell" colspan="3" rowspan="3"> CONNECT</td>
+<td class="dark_white_cell"> COLLECT</td>
+<td class="white_cell" colspan="3" rowspan="3"> CONNECT</td>
 
 </tr>
 
 
 <tr>
-<td class="top_cell black_cell"> COLLECT</td>
+<td class="black_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell dark_white_cell"> CONNECT</td>
+<td class="dark_white_cell"> CONNECT</td>
 </tr>
 
 
+
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 
     <tr>
-    <td class="top_cell black_cell"> CONNECT</td>
-    <td class="top_cell white_cell"> COLLECT</td>
-    <td class="top_cell black_cell"> CONNECT</td>
-    <td class="top_cell white_cell"> COLLECT</td>
+    <td class="black_cell"> CONNECT</td>
+    <td class="white_cell"> COLLECT</td>
+    <td class="black_cell"> CONNECT</td>
+    <td class="white_cell"> COLLECT</td>
     </tr>
 
 
@@ -150,199 +164,199 @@
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell flicker"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell flicker"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td id="happy" class="top_cell white_cell"> HAPPY </td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td id="happy" class="white_cell"> HAPPY </td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td id="SAD" class="top_cell white_cell"> SAD </td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td id="SAD" class="white_cell"> SAD </td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 <tr>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
 </tr>
 
 <tr>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
-<td class="top_cell white_cell"> COLLECT</td>
-<td class="top_cell black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
+<td class="white_cell"> COLLECT</td>
+<td class="black_cell"> CONNECT</td>
 </tr>
 
 

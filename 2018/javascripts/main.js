@@ -3,7 +3,7 @@
 
 let reset_all_size = function(){
 
-  let td_height = parseInt($( window ).width() * 0.2) // 윈도우 값의 0.2만큼을 한 셀의 크기로 설정
+  let td_height = parseInt($( window ).width() * 0.25) // 윈도우 값의 0.2만큼을 한 셀의 크기로 설정
   let table_width = td_height*4;  // 테이블은 4개의 셀 크기
 
   $("#top_title").css("width", $( window ).width());

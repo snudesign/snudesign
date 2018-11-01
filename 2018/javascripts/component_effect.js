@@ -129,7 +129,7 @@ var countDown = setInterval(function() {
    // document.getElementById("timer").innerHTML = days + " : " + hours + " : "
    // + minutes + " : " + seconds + " : " + remain;
     
-    document.getElementById("d-day").innerHTML = "D-" + days +"<p class='content_A' style='color:hsl(0, 0%, 15%);font-size:2rem'>"+remain+"</p>";
+    document.getElementById("d-day").innerHTML = "d-" + days +"<p class='content_A' style='color:hsl(0, 0%, 15%);font-size:2rem'>"+remain+"</p>";
     document.getElementById("d-day-h").innerHTML = "<p class='content_section'>hours</p>" + "<p class='content_A'>"+hours+"</p>"; 
     document.getElementById("d-day-m").innerHTML = "<p class='content_section'>minutes</p>" + "<p class='content_A'>"+minutes+"</p>";
     document.getElementById("d-day-s").innerHTML = "<p class='content_section'>seconds</p>" + "<p class='content_A'>"+seconds+"</p>";

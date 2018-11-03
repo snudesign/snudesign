@@ -32,8 +32,9 @@
   --div_padding: 0px;
 }
 
-:lang(en-us){
-
+:lang(sdw){
+  font-family:'sdwb', 'sdwr';
+  margin: 3rem 0 2rem 0;
 }
 :lang(ko){
   font-family:'Noto Sans KR';
@@ -69,13 +70,13 @@ p.content_A {
 
 p.content_div {
   width:'100%'; 
-  padding:20px 60px 20px 20px; 
+  height:'100%'; 
 }
 
 p.content_title {
   text-align:left; 
   width:'100%'; 
-  padding:20px 60px 20px 20px; 
+  padding: 20px 20px 20px 20px;
   line-height: 2.6rem; 
   font-size: 2.4rem;
 }
@@ -83,26 +84,27 @@ p.content_title {
 p.content_subtitle {
   text-align:left; 
   width:'100%'; 
-  padding:20px 60px 20px 20px; 
-  line-height: 2rem; 
-  font-size: 1.6rem;
+  padding: 20px 20px 0px 20px;
+  line-height: 3rem; 
+  font-style: bold;
+  font-size: 2rem;
 }
 
 
 p.content_paragraph {
   text-align:left; 
   width:'100%'; 
-  padding:20px 60px 20px 20px; 
-  line-height: 2.3rem; 
-  font-size: 1.5rem;
+  padding: 20px 20px 20px 20px;
+  line-height: 2rem; 
+  font-size: 1.2rem;
 }
 
 p.content_list {
   text-align:left; 
   width:'100%'; 
-  padding:20px 60px 20px 20px; 
-  line-height: 3rem; 
-  font-size: 1.4rem;
+  padding: 20px 20px 20px 20px;
+  line-height: 2rem; 
+  font-size: 1.2rem;
 }
 
 .icon_big{
@@ -115,15 +117,16 @@ p.content_list {
 /********************************/
 
 table {
-  margin: auto;
+  /* margin: auto; */
   border-collapse: collapse;
+  width:100%;
 }
 
 td {
   word-break: break-all;
-  overflow:hidden;
+  transition: background-color 0.5s ease-in;
+  overflow: hidden;
 }
-
 
 .menu_button {
 
@@ -166,6 +169,9 @@ td {
   color: black;
 }
 
+.content_div{
+  height: 100%;
+}
 
 #myBtn {
   display: none; /* Hidden by default */
@@ -188,12 +194,3 @@ td {
   .fill_color{
     background-color: black;
   }
-
-  td{
-    width: 300px;
-    height: 300px;
-    transition: background-color 0.5s ease-in
-  }
-
-
-

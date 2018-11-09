@@ -30,7 +30,7 @@
   <h1> SNu dEsIGN WEeK 2018 </h1>
 
   <!-- 메뉴 -->
-  <div class="menu_div">
+  <div class="menu_div" id="myHeader">
     <ul class="menu">
       <li><button class="menu_button" onclick="menu1()"> exhibition </button> </li>
       <li><button class="menu_button" onclick="menu2()"> program </button> </li>
@@ -40,23 +40,24 @@
     </ul>  
   </div>
   <!-- TOP버튼 -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top" lang="sdw">Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
  
 
   <!-- 본문 영역 -->
   <table>
-
-
     <!-- 카운트 다운 -->
     <tr>
-      <td class="black_cell" colspan="3" rowspan="3" style="position: relative">
-            <video loop autoplay="autoplay" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1;">
+      <td class="black_cell" colspan="3" rowspan="3">
+        <div style="position:relative;width:100%;height: 100%"id="hithere">
+                <video loop autoplay="autoplay" id="motion" style="position:absolute; top:0;left: 0; height: 100%; width: 100%; object-fit:'cover'; opacity: 0.1;">
                     <source src="video/motionposter_webpage.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-            </video>
-            <p id="d-day" style="text-align: center"></p>  </td>
-      <td class="black_cell" style="background-color:hsl(0, 0%, 5%)"> <p id="d-day-h"></p>  </td>
+                </video>
+            <p style="position:absolute; width:100%; height:100%; background-color:#10101000;" id="d-day">hello</p>    
+        </div>
+    </td>
+    <td class="black_cell" style="background-color:hsl(0, 0%, 5%)"> <p id="d-day-h"></p>  </td>
     </tr>
 
     <tr>
@@ -136,7 +137,7 @@
     </tr>
         <!-- 후원사 -->
         <tr>
-            <td  class="black_cell">
+            <td  class="black_cell flicker">
                     <p class="content_title"> 후원사 </p>
             </td>
         </tr>

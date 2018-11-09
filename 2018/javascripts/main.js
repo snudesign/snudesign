@@ -18,6 +18,7 @@ let reset_all_size = function(){
 
   $("td").css("width",  td_height)
         .css("height",  td_height)
+
 }
 
 
@@ -46,7 +47,19 @@ let reset_all_size = function(){
       }).mouseover(function(){
           $(this).next("ul").slideDown();
       });
+    ///////sticky header/////
+    window.onscroll = function() {stickyFunction()};
 
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function stickyFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+     }
+}
 
 
   });
@@ -81,3 +94,4 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+

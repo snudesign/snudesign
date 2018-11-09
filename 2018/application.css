@@ -69,6 +69,7 @@ p.content_section {
 p.content_A {
   font-size: 1em;
   text-align: center;
+  margin: auto;
 }
 
 p.content_div {
@@ -203,9 +204,3 @@ td {
     top: 0;
     width: 100%;
   }
-
-#d_day{
-  position: 'absolute';
-  top:0;
-  left:0;
-}

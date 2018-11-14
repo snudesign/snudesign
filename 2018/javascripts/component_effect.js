@@ -11,10 +11,10 @@ var Show_keywords = function(el){
     m.current_length = 0;
     m.fadeBuffer = false;
     m.messages = [
-      'CONNECT',
-      'COLLECT',
-      'SNU DESIGN WEEK',
-      'DEGREE SHOW'
+      'connect',
+      'collect',
+      'snu design week',
+      'degree show'
       //'VISUAL DESIGN & INDUSTRIAL DESIGN'
     ];
     

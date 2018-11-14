@@ -14,6 +14,7 @@
  *= require_self
  */
 
+ * { font-family: 'Spoqa Han Sans','Sans-serif'; }
 
  @font-face{font-family:'sdwb'; src:url('fonts/SDW_Font-Bold.ttf')}
  @font-face{font-family:'sdwr'; src:url('fonts/SDW_Font-Regular.ttf')}
@@ -132,6 +133,16 @@ td {
   overflow: hidden;
 }
 
+
+
+table.exhibition{
+  background-color: rgb(192, 0, 0);
+  color: black;
+  border-color: green;
+  border: 5px;
+
+}
+
 .menu_button {
 
   background-color: transparent;
@@ -152,6 +163,77 @@ td {
  text-decoration:underline; 
 }
 
+.black_div_center {
+  font-family:'sdwb', 'sdwr';
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.font50 {
+  font-size: 50px;
+  font-weight:700;
+}
+
+.font_snu{
+  font-family:'sdwb', 'sdwr';
+}
+
+.font_bold{
+  font-weight:700;
+}
+
+.white_div_center {
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.white_div_left {
+  width: 100%;
+
+  background-color: rgb(255, 255, 255);
+  color: black;
+  align-items: left;
+  padding-top: 100px;
+}
+
+p.title_left {
+  text-align:left; 
+  width:'100%'; 
+  padding: 20px 20px 20px 25%;
+  line-height: 2.6rem; 
+  font-size: 2.4rem;
+}
+
+p.content_left{
+  text-align:left; 
+  width:'100%'; 
+  padding: 20px 10% 20px 25%;
+  line-height: 2rem; 
+  font-size: 1.2rem;
+  margin-bottom: 15%;
+}
+
+.black_ruler {
+  height: 5px;
+  width: 25%;
+  margin-left: 23%;
+  background-color: rgb(0, 0, 0);
+}
+
+.black_table {
+  background-color: rgb(0, 0, 0);
+}
 
 .black_cell {
   background-color: rgb(0, 0, 0);
@@ -185,12 +267,14 @@ td {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color:black;  /*Set a background color */
-  color:white; /* Text color */
+  background-color:transparent;  /*Set a background color */
+  color:rgb(114, 114, 114); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  text-decoration: underline;
+  
 }
 
 /* scroll events */
@@ -204,3 +288,125 @@ td {
     top: 0;
     width: 100%;
   }
+
+
+
+  div.block{
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+
+  span.room {
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+    
+  div.class {
+    display:flex;
+
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+
+  div.class_number{
+    width: 10%;
+  }
+
+  div.class_title{
+    height: 6rem;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: left;
+    padding: 1%;
+  }
+
+  div.class_contents{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: left;
+    padding: 1%;
+
+    margin-left: 1%;
+    font-size: 10pt;
+  }
+
+
+#program_sheet {
+
+  padding: 7%;
+
+}
+
+p.program_title_eng {
+  font-family:'sdwb', 'sdwr';
+    padding-top: 5%;
+    font-size: 15pt;
+  }
+
+p.program_title {
+  font-size: 30pt;
+  font-weight: 900;
+  margin: 0;
+}
+
+p.program_title_sub {
+  font-size: 10pt;
+  color: rgba(125, 125, 125);
+  padding-bottom: 5%;
+}
+
+p.program_section {
+  font-size: 15pt;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+p.program_section_name {
+  margin-top:10px;
+  font-size: 10pt;
+
+  margin-bottom: 20px;
+}
+
+p.program_section_sub {
+  font-size: 8pt;
+  margin-top:0;
+  margin-bottom: 0px;
+}
+
+
+p.program_day_black {
+
+  width: 150px;
+  font-size: 15pt;
+  margin: auto;
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+}
+
+p.program_day_white {
+
+  width: 150px;
+  font-size: 15pt;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+span.time {
+
+  font-size: 0.5rem;
+}

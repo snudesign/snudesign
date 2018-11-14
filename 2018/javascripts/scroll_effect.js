@@ -12,8 +12,8 @@ $(document).ready(function(){
 
   console.log( "flicker", middle_pos1 );
 
-  $("body").append( "<div id='start'> start </div>" );
-  $("body").append( "<div id='end'> end </div>" );
+//  $("body").append( "<div id='start'> start </div>" );
+//  $("body").append( "<div id='end'> end </div>" );
   
   $("#start")
   .css('position',"absolute")

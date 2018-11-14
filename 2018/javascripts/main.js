@@ -67,12 +67,25 @@ let reset_all_size = function(){
 
 /////menu button 스크롤 이동 ///////////////////
 
-  var menu1 = function (){
-    window.scrollTo(0, $("#happy").position().top); // x, y
+console.log("sibal")
+var menu_info = function (){
+    window.scrollTo(0, $("#info").position().top); // x, y
   }
 
-  var menu5 = function (){
-    window.scrollTo(0, $("#SAD").position().top); // x, y
+  var menu_catalogue = function (){
+    window.scrollTo(0, $("#catalogue").position().top); // x, y
+  }
+
+  var menu_exhibition = function (){
+    window.scrollTo(0, $("#exhibition").position().top); // x, y
+  }
+
+  var menu_program = function (){
+    window.scrollTo(0, $("#program").position().top); // x, y
+  }
+
+  var menu_contact = function (){
+    window.scrollTo(0, $("#contact").position().top); // x, y
   }
 
 

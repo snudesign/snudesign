@@ -69,23 +69,23 @@ let reset_all_size = function(){
 
 console.log("sibal")
 var menu_info = function (){
-    window.scrollTo(0, $("#info").position().top); // x, y
+    window.scrollTo(0, $("#info").position().top-$('#myHeader').height()); // x, y
   }
 
   var menu_catalogue = function (){
-    window.scrollTo(0, $("#catalogue").position().top); // x, y
+    window.scrollTo(0, $("#catalogue").position().top-$('#myHeader').height()); // x, y
   }
 
   var menu_exhibition = function (){
-    window.scrollTo(0, $("#exhibition").position().top); // x, y
+    window.scrollTo(0, $("#exhibition").position().top-$('#myHeader').height()); // x, y
   }
 
   var menu_program = function (){
-    window.scrollTo(0, $("#program").position().top); // x, y
+    window.scrollTo(0, $("#program").position().top-$('#myHeader').height()); // x, y
   }
 
   var menu_contact = function (){
-    window.scrollTo(0, $("#contact").position().top); // x, y
+    window.scrollTo(0, $("#contact").position().top-$('#myHeader').height()); // x, y
   }
 
 

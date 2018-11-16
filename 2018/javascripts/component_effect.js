@@ -94,7 +94,7 @@ var Show_keywords = function(el){
  
  }
  
- console.clear();
+ //console.clear();
  var keywords = new Show_keywords($('#show_keywords'));
 
 
@@ -111,7 +111,7 @@ var countDownDate = new Date("Dec 6, 2018 10:00:00").getTime();
 
 // Update the count down every 1 second
 var countDown = setInterval(function() {
-    console.log("e");
+  //  console.log("e");
     // Get todays date and time
     var now = new Date().getTime();
     

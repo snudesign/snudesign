@@ -67,7 +67,7 @@ let reset_all_size = function(){
 
 /////menu button 스크롤 이동 ///////////////////
 
-console.log("sibal")
+//console.log("sibal")
 var menu_info = function (){
     window.scrollTo(0, $("#info").position().top-$('#myHeader').height()); // x, y
   }

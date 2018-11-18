@@ -16,6 +16,7 @@ function myMap() {
   marker.setMap(map);
 
   //// 선그리기
+  /*
   var pos1 = {lat: 37.463965, lng: 126.955160};
   var pos2 = {lat: 37.463651, lng: 126.954269};
   var pos3 = {lat: 37.463841, lng: 126.954022};
@@ -28,7 +29,9 @@ function myMap() {
     strokeWeight:2
   });
 
+
   flightPath.setMap(map);
+  */
 }
 
 

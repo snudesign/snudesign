@@ -33,7 +33,11 @@ let reset_all_size = function(){
     }) 
 
 
-
+    $(".tumblbug_shot").click(function(){
+      console.log("QQ");
+      window.open("https://tumblbug.com/2018snud");
+      
+    })
  
       $(".menu").click(function(){
           var submenu = $(this).next("ul");
@@ -62,7 +66,7 @@ let reset_all_size = function(){
 }
 
 
-  });
+});
 
 
 /////menu button 스크롤 이동 ///////////////////

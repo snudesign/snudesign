@@ -306,6 +306,7 @@ p.content_left{
   }
 
 
+  /************************************EXHIBITION 수업 관련 **********************/
 
   div.block{
     display: block;
@@ -314,9 +315,13 @@ p.content_left{
   }
 
 
+  span.title {
+    font-size: 20pt;
+  }
   span.room {
-    font-size: 0.8rem;
+    font-size: 12px;
     opacity: 0.5;
+    margin:0;
   }
     
   div.class {
@@ -333,32 +338,54 @@ p.content_left{
 
   div.class_number{
     width: 10%;
+    text-align: left;
+    padding-right: 2%;
   }
 
   div.class_title{
-    height: 6rem;
-    width: 20%;
+    min-height: 10em;
+    width: 30%;
     background-color: rgb(0, 0, 0);
     color: white;
     text-align: left;
     padding: 1%;
+
   }
 
   div.class_contents{
-    width: 30%;
+    width: 40%;
     background-color: rgb(255, 255, 255);
     color: black;
     text-align: left;
     padding: 1%;
 
     margin-left: 1%;
-    font-size: 10pt;
+    font-size: 12pt;
+  }
+
+  div.class_id {
+/*
+    margin-left: 20%;
+    margin-right: 0%;
+    */
   }
 
 
-#program_sheet {
+    /***********************************PROGRAM 프로그램관련 **********************/
 
+#program_sheet {
   padding: 7%;
+}
+
+div.two_col {
+
+  border-width                :   1px;
+  border-color                :   rgb(119, 119, 119);
+
+  display: inline-block;
+  vertical-align:top;
+  width: 500px;
+  margin: 1%;
 
 }
 

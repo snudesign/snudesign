@@ -29,7 +29,7 @@ let reset_all_size = function(){
     $("#moving").css("margin-top",  titleTd_height_2)
     $("#motionPoster").css("height",  titleTd_height_2)
   }
-  $("#d-day").css("margin-top", $("#motionPoster").height()*0.25 )
+  $("#d-day").css("margin-top", $("#motionPoster").height()*0.25+40)
 }
 
 

@@ -5,6 +5,8 @@ let reset_all_size = function(){
 
   let td_height = parseInt($( window ).width() * 0.25) // 윈도우 값의 0.25만큼을 한 셀의 크기로 설정
   let table_width = td_height*4;  // 테이블은 4개의 셀 크기
+  let titleTd_height = ($( window ).height()-100)%$(window).width();
+  let titleTd_height_2 = ($( window ).height()-100);
 
   $("#top_title").css("width", $( window ).width());
 
@@ -18,7 +20,13 @@ let reset_all_size = function(){
 
   $("td").css("width",  td_height)
         .css("height",  td_height)
-
+  
+  if ($( window ).height()>$( window ).width()){
+    $("#moving").css("margin-top",  titleTd_height)
+  }
+  else{
+    $("#moving").css("margin-top",  titleTd_height_2)
+  }
 }
 
 
@@ -55,7 +63,7 @@ let reset_all_size = function(){
     window.onscroll = function() {stickyFunction()};
 
     var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
+    var sticky = document.getElementById("moving").offsetTop+100;
 
     function stickyFunction() {
     if (window.pageYOffset > sticky) {

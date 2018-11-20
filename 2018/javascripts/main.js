@@ -29,6 +29,7 @@ let reset_all_size = function(){
     $("#moving").css("margin-top",  titleTd_height_2)
     $("#motionPoster").css("height",  titleTd_height_2)
   }
+  $("#d-day").css("margin-top", $("#motionPoster").height()*0.25 )
 }
 
 
@@ -83,23 +84,23 @@ let reset_all_size = function(){
 
 //console.log("sibal")
 var menu_info = function (){
-    window.scrollTo(0, $("#info").position().top-$('#myHeader').height()); // x, y
+    window.scrollTo(0, $("#info").position().top+$('#motionPoster').height()-$('#myHeader').height()); // x, y
   }
 
   var menu_catalogue = function (){
-    window.scrollTo(0, $("#catalogue").position().top-$('#myHeader').height()); // x, y
+    window.scrollTo(0, $("#catalogue").position().top+$('#motionPoster').height()-$('#myHeader').height()); // x, y
   }
 
   var menu_exhibition = function (){
-    window.scrollTo(0, $("#exhibition").position().top-$('#myHeader').height()); // x, y
+    window.scrollTo(0, $("#exhibition").position().top+$('#motionPoster').height()-$('#myHeader').height()); // x, y
   }
 
   var menu_program = function (){
-    window.scrollTo(0, $("#program").position().top-$('#myHeader').height()); // x, y
+    window.scrollTo(0, $("#program").position().top+$('#motionPoster').height()-$('#myHeader').height()); // x, y
   }
 
   var menu_contact = function (){
-    window.scrollTo(0, $("#contact").position().top-$('#myHeader').height()); // x, y
+    window.scrollTo(0, $("#contact").position().top+$('#motionPoster').height()-$('#myHeader').height()); // x, y
   }
 
 

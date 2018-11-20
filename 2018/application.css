@@ -319,6 +319,15 @@ p.content_left{
   }
 
 
+  .tumblbug_ex {
+
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Spoqa Han Sans','Sans-serif';
+    font-size : 13px;
+  }
+
   /************************************EXHIBITION 수업 관련 **********************/
 
   div.block{
@@ -470,11 +479,39 @@ p.program_day_white {
 
 span.time {
 
-  font-size: 10pt;
+  font-size: 0.5rem;
 }
 
 .titleCell{
   width: 100%;
   height: 20px;
   color: white;
+}
+
+#program_apply {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  height: 40px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+
+}
+
+#program_apply a{
+
+  color: black;
+  vertical-align: middle;
+  padding-top:auto;
+  padding-bottom: auto;
+  text-decoration: none;
+
 }

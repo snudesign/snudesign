@@ -441,7 +441,8 @@ p.program_section {
 p.program_section_name {
   margin-top:12px;
   font-size: 12pt;
-  color:#757575;
+  color:#606060;
+  font-weight: 500;
   margin-bottom: 24px;
 }
 
@@ -455,7 +456,7 @@ p.program_section_sub {
 p.program_day_black {
 
   width: 150px;
-  height: 40px;
+  height: 32px;
   font-size: 15pt;
   text-align: center;
   margin: auto;
@@ -468,7 +469,7 @@ p.program_day_black {
 p.program_day_white {
 
   width: 150px;
-  height: 40px;
+  height: 32px;
   font-size: 15pt;
   margin: auto;
   padding-top:10px;

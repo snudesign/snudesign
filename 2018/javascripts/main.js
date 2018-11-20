@@ -21,7 +21,7 @@ let reset_all_size = function(){
   $("td").css("width",  td_height)
         .css("height",  td_height)
   
-  if ($( window ).height()>$( window ).width()){
+  if ($( window ).height()>$( window ).width()*1.5){
     $("#moving").css("margin-top",  titleTd_height)
   }
   else{

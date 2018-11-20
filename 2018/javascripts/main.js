@@ -5,7 +5,7 @@ let reset_all_size = function(){
 
   let td_height = parseInt($( window ).width() * 0.25) // 윈도우 값의 0.25만큼을 한 셀의 크기로 설정
   let table_width = td_height*4;  // 테이블은 4개의 셀 크기
-  let titleTd_height = ($( window ).height()-100)%$(window).width();
+  let titleTd_height = ($( window ).height()*0.5);
   let titleTd_height_2 = ($( window ).height()-100);
 
   $("#top_title").css("width", $( window ).width());
@@ -23,9 +23,11 @@ let reset_all_size = function(){
   
   if ($( window ).height()>$( window ).width()*1.5){
     $("#moving").css("margin-top",  titleTd_height)
+    $("#motionPoster").css("height",  titleTd_height)
   }
   else{
     $("#moving").css("margin-top",  titleTd_height_2)
+    $("#motionPoster").css("height",  titleTd_height_2)
   }
 }
 

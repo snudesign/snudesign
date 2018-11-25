@@ -444,6 +444,7 @@ p.program_section_name {
   color:#606060;
   font-weight: 500;
   margin-bottom: 24px;
+  line-height: 24px;
 }
 
 p.program_section_sub {
@@ -461,6 +462,7 @@ p.program_day_black {
   text-align: center;
   margin: auto;
   padding-top:10px;
+  padding-bottom:10px;
   background-color: black;
   color: white;
   white-space: nowrap;
@@ -473,6 +475,7 @@ p.program_day_white {
   font-size: 15pt;
   margin: auto;
   padding-top:10px;
+  padding-bottom:10px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   white-space: nowrap;
@@ -504,15 +507,14 @@ span.time {
   text-align: center;
   vertical-align: middle;
   font-weight: 700;
-
+  padding-top: 11px;
+  text-decoration: none;
 }
 
-#program_apply a{
-
-  color: black;
+#program_apply:hover{
+  background-color:black;
+  color: white;
+  align-self: center;
   vertical-align: middle;
-  padding-top:auto;
-  padding-bottom: auto;
   text-decoration: none;
-
 }
